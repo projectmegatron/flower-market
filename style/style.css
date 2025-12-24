@@ -107,11 +107,11 @@ nav {
 /* our plants section start */
 .our-plants {
     margin: 50px 10%;
- 
+
 }
 
 .plants {
-  
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -123,7 +123,7 @@ nav {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
-justify-items: center;
+    justify-items: center;
 }
 
 .cart {
@@ -159,6 +159,99 @@ justify-items: center;
     border-radius: 8px;
 }
 
+/*Flower & plants Lover Section start */
+.lover {
+    padding: 70px 30px;
+    margin: 50px 10%;
+}
+
+.plants-lover {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
+}
+
+.love-img {
+    position: relative;
+}
+
+.love-img>img {
+    width: calc(100px)-50%;
+}
+
+.badge {
+    position: absolute;
+    top: -80px;
+    left: 420px;
+}
+
+.badge img {
+    width: 200px;
+    height: 200px;
+}
+
+.plants-lover-info {
+    width: 50%;
+}
+
+/* latest-deals section start */
+.latest-deals-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+   
+}
+#latest-cart1{
+    background-image: url(/assets/deal-bloom.png);
+    width: 350px;
+    height: 350px;
+    background-repeat: no-repeat;
+background-size: cover;
+}
+#latest-cart2{
+    background-image: url(/assets/deal-zabo.png);
+    width: 350px;
+    height: 350px;
+    background-repeat: no-repeat;
+    
+   grid-row: span 2;
+   background-size: cover;
+}
+#latest-cart3{
+    background-image: url(/assets/deal-ana.png);
+    background-size: cover;
+      width: 350px;
+      height: 350px;
+      background-repeat: no-repeat;
+}
+.latest-cart{
+    width: 100%;
+  height: 100%;
+}
+.latest-carts{
+    margin: 20px 10%;
+    justify-items: center;
+ display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-auto-rows: minmax(150px, auto);
+  gap: 20px; 
+  padding: 20px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    align-items: center;
+
+}
+footer>ul{
+    display: flex;
+    flex-direction: column;
+}
 
 @media screen and (max-width:576px) {
     .banner {
@@ -175,9 +268,30 @@ justify-items: center;
         width: 100%;
         margin: 10px auto;
     }
-    .cart-section{
-         display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 20px;
+
+    .cart-section {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+
+    .plants-lover {
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .lover {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .love-img>img {
+        width: 100%;
+    }
+
+    .badge {
+        display: none;
     }
 }
