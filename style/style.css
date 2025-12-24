@@ -2,3 +2,107 @@
     margin: 0px;
     padding: 0px;
 }
+header{
+    margin: 10px 10%;
+}
+nav{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+
+}
+.nev-items{
+    display: flex;
+    gap: 30px;
+}
+.nav-button{
+    display: flex;
+    gap: 30px;
+    margin-right: 20px;
+    align-items: center;
+}
+.nev-items li{
+list-style: none;
+}
+.nev-items a{
+    text-decoration: none;
+}
+.btn-gray{
+   padding: 10px;
+   background-color: none;
+}
+
+
+/* banner section style */
+.banner{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.banner {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: end;
+}
+.banner-img{
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+/* .banner-img img{
+    width: 100%;  
+} */
+
+
+.banner-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    
+    width: 100%;
+}
+.banner-title span{
+    color: rgba(233, 90, 8, 1);
+
+font-family: Noto Serif;
+font-size: 65px;
+font-weight: 700;
+line-height: 89px;
+letter-spacing: 0%;
+text-align: left;
+}
+.banner-title{
+    font-family: Noto Serif;
+font-size: 65px;
+font-weight: 700;
+line-height: 89px;
+letter-spacing: 0%;
+text-align: left;
+}
+
+.banner-description{
+    color: rgba(0, 0, 0, 0.5);
+font-family: Inter;
+font-size: 22px;
+font-weight: 400;
+line-height: 27px;
+letter-spacing: 0%;
+text-align: left;
+}
+
+@media screen and (max-width:576px) {
+   .banner{
+    display: flex;
+    flex-direction: column;
+    flex-direction: column-reverse;
+} 
+.nev-items{
+    display: none;
+}
+.banner-img img{
+    width: 100%;
+    margin: 10px auto;
+}
+}
